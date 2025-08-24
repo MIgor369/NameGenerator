@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Translit Domain Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Translit Domain Generator</h1>
+    <p class="subtitle">Создавай короткие домены и имена каналов на транслите</p>
+
+    <div class="controls">
+      <label for="length">Длина слова:</label>
+      <select id="length">
+        <option value="3">3 буквы</option>
+        <option value="4">4 буквы</option>
+        <option value="5">5 буквы</option>
+      </select>
+
+      <button id="generate">Сгенерировать</button>
+      <button id="combine">Скомбинировать</button>
+    </div>
+
+    <div class="results">
+      <h3>Сгенерированные слова:</h3>
+      <div id="words"></div>
+    </div>
+
+    <div class="results">
+      <h3>Комбинации (слово + слово):</h3>
+      <div id="combinations"></div>
+    </div>
+
+    <div class="share">
+  <button id="download">📥 Скачать результат</button>
+  <button id="shareTelegram">📤 Поделиться в Telegram</button>
+  <p id="status"></p>
+  </div>
+  
+  <!-- Telegram WebApp SDK (для TMA) -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

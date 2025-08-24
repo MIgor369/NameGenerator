@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* светло-серый фон */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00aaff; /* светло-голубой */
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.controls label {
+  font-weight: bold;
+  color: #00aaff;
+}
+
+.controls select, .controls button {
+  padding: 10px 14px;
+  border: 1px solid #a0d8f1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.controls button {
+  background-color: #a0d8b3; /* светло-зеленый */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background-color: #8bcba0;
+}
+
+.results {
+  margin-bottom: 20px;
+}
+
+.results h3 {
+  color: #00aaff;
+  border-bottom: 2px solid #d0ebff;
+  padding-bottom: 5px;
+}
+
+#words, #combinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  min-height: 60px;
+  padding: 10px;
+  background-color: #f8fbfd;
+  border: 1px dashed #a0d8f1;
+  border-radius: 8px;
+  color: #444;
+}
+
+.word-tag {
+  padding: 6px 10px;
+  background-color: #e0f5ff;
+  color: #0077aa;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.combo-tag {
+  padding: 6px 10px;
+  background-color: #d0f0d0;
+  color: #2e7d32;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.share {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#copyAll {
+  padding: 10px 20px;
+  background-color: #87ceeb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#copyAll:hover {
+  background-color: #64b5f6;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2e7d32;
+  min-height: 20px;
+}
+
+#shareTelegram {
+  padding: 10px 20px;
+  background-color: #0088cc; /* фирменный синий Telegram */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#shareTelegram:hover {
+  background-color: #006aa1;
+}
